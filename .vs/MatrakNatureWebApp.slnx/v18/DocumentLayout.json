@@ -1,7 +1,20 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5370C-7935-466C-B5C7-55A9584031D4}|VeriErisimKatmani\\VeriErisimKatmani.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\verierisimkatmani\\islemmerkezmudurlugu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5370C-7935-466C-B5C7-55A9584031D4}|VeriErisimKatmani\\VeriErisimKatmani.csproj|solutionrelative:verierisimkatmani\\islemmerkezmudurlugu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5370C-7935-466C-B5C7-55A9584031D4}|VeriErisimKatmani\\VeriErisimKatmani.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\verierisimkatmani\\tablosiniflari\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5370C-7935-466C-B5C7-55A9584031D4}|VeriErisimKatmani\\VeriErisimKatmani.csproj|solutionrelative:verierisimkatmani\\tablosiniflari\\kategori.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F8D5370C-7935-466C-B5C7-55A9584031D4}|VeriErisimKatmani\\VeriErisimKatmani.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\verierisimkatmani\\baglantiyollari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5370C-7935-466C-B5C7-55A9584031D4}|VeriErisimKatmani\\VeriErisimKatmani.csproj|solutionrelative:verierisimkatmani\\baglantiyollari.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 0,
@@ -9,7 +22,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 91,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -18,6 +31,45 @@
             {
               "$type": "Bookmark",
               "Name": "ST:0:0:{e506b91c-c606-466a-90a9-123d1d1e12b3}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Kategori.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\VeriErisimKatmani\\TabloSiniflari\\Kategori.cs",
+              "RelativeDocumentMoniker": "VeriErisimKatmani\\TabloSiniflari\\Kategori.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\VeriErisimKatmani\\TabloSiniflari\\Kategori.cs",
+              "RelativeToolTip": "VeriErisimKatmani\\TabloSiniflari\\Kategori.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T06:45:18.17Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "IslemMerkezMudurlugu.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\VeriErisimKatmani\\IslemMerkezMudurlugu.cs",
+              "RelativeDocumentMoniker": "VeriErisimKatmani\\IslemMerkezMudurlugu.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\VeriErisimKatmani\\IslemMerkezMudurlugu.cs",
+              "RelativeToolTip": "VeriErisimKatmani\\IslemMerkezMudurlugu.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwDYAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T06:22:28.154Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BaglantiYollari.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\VeriErisimKatmani\\BaglantiYollari.cs",
+              "RelativeDocumentMoniker": "VeriErisimKatmani\\BaglantiYollari.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\VeriErisimKatmani\\BaglantiYollari.cs",
+              "RelativeToolTip": "VeriErisimKatmani\\BaglantiYollari.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAACLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T06:16:38.83Z",
+              "EditorCaption": ""
             }
           ]
         }
