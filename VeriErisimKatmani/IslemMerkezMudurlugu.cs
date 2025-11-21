@@ -42,11 +42,9 @@ namespace VeriErisimKatmani
                 }
                 okuyucu.Close();
             }
-            catch (Exception ex)
+            catch
             {
                 return null;
-                // Hata yönetimi burada yapılabilir
-                //throw new Exception("Kategori listeleme hatası: " + ex.Message);
             }
             finally
             {
@@ -76,11 +74,9 @@ namespace VeriErisimKatmani
                 }
                 okuyucu.Close();
             }
-            catch (Exception ex)
+            catch
             {
                 return null;
-                // Hata yönetimi burada yapılabilir
-                //throw new Exception("Kategori listeleme hatası: " + ex.Message);
             }
             finally
             {
@@ -88,11 +84,77 @@ namespace VeriErisimKatmani
             }
             return kategoriler;
         }
+
         //Eklememe
+        public bool KategoriEkle(Kategori kategori)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Kategoriler (Isim, YayinDurum, Silinmis) VALUES (@Isim, @YayinDurum, @Silinmis)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@Isim", kategori.Isim);
+                komut.Parameters.AddWithValue("@YayinDurum", kategori.YayinDurum);
+                komut.Parameters.AddWithValue("@Silinmis", kategori.Silinmis);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
 
         //Güncelleme
+        public bool KategoriGuncelle(Kategori kategori)
+        {
+            try
+            {
+                komut.CommandText = "UPDATE Kategoriler SET Isim = @Isim, YayinDurum = @YayinDurum, Silinmis = @Silinmis WHERE ID = @ID";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@Isim", kategori.Isim);
+                komut.Parameters.AddWithValue("@YayinDurum", kategori.YayinDurum);
+                komut.Parameters.AddWithValue("@Silinmis", kategori.Silinmis);
+                komut.Parameters.AddWithValue("@ID", kategori.ID);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
 
-        //Silme
+        //Silme - SoftDelete
+        public bool KategoriSil(int kategoriID)
+        {
+            try
+            {
+                komut.CommandText = "UPDATE Kategoriler SET Silinmis = 1 WHERE ID = @ID";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@ID", kategoriID);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+        }
 
         //Diğer İşlemler
 
