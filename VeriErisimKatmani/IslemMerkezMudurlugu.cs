@@ -18,6 +18,8 @@ namespace VeriErisimKatmani
             komut = baglanti.CreateCommand();
         }
 
+
+
         #region Kategori Metotları
 
         //Listeleme
@@ -158,6 +160,86 @@ namespace VeriErisimKatmani
 
         //Diğer İşlemler
 
+
+        #endregion
+
+
+        #region Yönetici Metotları
+
+        //Yönetici Giriş
+        public Yonetici YoneticiGiris(string mail, string sifre)
+        {
+            Yonetici y = null;
+            try
+            {
+                komut.CommandText = "SELECT COUNT(*) FROM Yoneticiler WHERE Mail = @m AND Sifre=@s";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@m", mail);
+                komut.Parameters.AddWithValue("@s", sifre);
+                baglanti.Open();
+                int sayi = Convert.ToInt32(komut.ExecuteScalar());
+                if (sayi > 0)
+                {
+                    y = new Yonetici();
+                    komut.CommandText = "SELECT ID, Isim, Soyisim, KullaniciAdi, Mail, Sifre, SonGirisTarihi, Durum, Silinmis WHERE Mail = @m AND Sifre=@s";
+                    komut.Parameters.Clear();
+                    komut.Parameters.AddWithValue("@m", mail);
+                    komut.Parameters.AddWithValue("@s", sifre);
+                    SqlDataReader okuyucu = komut.ExecuteReader();
+                    while (okuyucu.Read())
+                    {
+                        y.ID = okuyucu.GetInt32(0);
+                        y.Isim = okuyucu.GetString(1);
+                        y.Soyisim = okuyucu.GetString(2);
+                        y.KullaniciAdi = okuyucu.GetString(3);
+                        y.Mail = okuyucu.GetString(4);
+                        y.Sifre = okuyucu.GetString(5);
+                        y.SonGirisTarihi = okuyucu.GetDateTime(6);
+                        y.Durum = okuyucu.GetBoolean(7);
+                        y.DurumStr = y.Durum ? "Aktif" : "Pasif";
+                        y.Silinmis = okuyucu.GetBoolean(8);
+                    }
+                }
+            }
+            finally
+            {
+                baglanti.Close();
+            }
+            return y;
+        }
+
+        //Yonetici Kontrol
+        public byte YoneticiKontrol(string KullaniciAdi, string Mail)
+        {
+            byte sonuc = 0;
+            try
+            {
+                komut.CommandText = "SELECT COUNT(*) FROM Yoneticiler WHERE KullaniciAdi = @ka";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@ka", KullaniciAdi);
+                baglanti.Open();
+                int ka_sayi = Convert.ToInt32(komut.ExecuteScalar());
+                if (ka_sayi > 0) { sonuc = 1; }
+                komut.CommandText = "SELECT COUNT(*) FROM Yoneticiler WHERE Mail = @m";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@m", Mail);
+                int m_sayi = Convert.ToInt32(komut.ExecuteScalar());
+                if (m_sayi > 0) { sonuc = 2; }
+                
+            }
+            finally{baglanti.Close();}
+            return sonuc;
+        }
+
+        //Yönetici Ekle
+
+        //Yönetici Listele
+
+        //Yönetici Getir
+
+        //Yönetici Güncelle
+
+        //Yönetici Sil
 
         #endregion
     }
