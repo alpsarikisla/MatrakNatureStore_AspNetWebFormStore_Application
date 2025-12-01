@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace VeriErisimKatmani.TabloSiniflari
 {
-    internal class Yonetici
+    public class Yonetici
     {
         public int ID { get; set; }
         public string Isim { get; set; }

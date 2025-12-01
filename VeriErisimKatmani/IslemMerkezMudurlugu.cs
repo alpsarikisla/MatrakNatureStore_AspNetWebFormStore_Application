@@ -8,7 +8,7 @@ using VeriErisimKatmani.TabloSiniflari;
 
 namespace VeriErisimKatmani
 {
-    internal class IslemMerkezMudurlugu
+    public class IslemMerkezMudurlugu
     {
         SqlConnection baglanti;
         SqlCommand komut;
@@ -60,7 +60,7 @@ namespace VeriErisimKatmani
             List<Kategori> kategoriler = new List<Kategori>();
             try
             {
-                komut.CommandText = silinmis ? "SELECT ID, Isim, YayinDurum, Silinmis FROM Kategoriler WHERE Silinmis = 1": "SELECT ID, Isim, YayinDurum, Silinmis FROM Kategoriler WHERE Silinmis = 0";
+                komut.CommandText = silinmis ? "SELECT ID, Isim, YayinDurum, Silinmis FROM Kategoriler WHERE Silinmis = 1" : "SELECT ID, Isim, YayinDurum, Silinmis FROM Kategoriler WHERE Silinmis = 0";
                 baglanti.Open();
                 SqlDataReader okuyucu = komut.ExecuteReader();
                 while (okuyucu.Read())
@@ -181,7 +181,7 @@ namespace VeriErisimKatmani
                 if (sayi > 0)
                 {
                     y = new Yonetici();
-                    komut.CommandText = "SELECT ID, Isim, Soyisim, KullaniciAdi, Mail, Sifre, SonGirisTarihi, Durum, Silinmis WHERE Mail = @m AND Sifre=@s";
+                    komut.CommandText = "SELECT ID, Isim, Soyisim, KullaniciAdi, Mail, Sifre, SonGirisTarihi, Durum, Silinmis FROM Yoneticiler WHERE Mail = @m AND Sifre=@s";
                     komut.Parameters.Clear();
                     komut.Parameters.AddWithValue("@m", mail);
                     komut.Parameters.AddWithValue("@s", sifre);
@@ -194,7 +194,10 @@ namespace VeriErisimKatmani
                         y.KullaniciAdi = okuyucu.GetString(3);
                         y.Mail = okuyucu.GetString(4);
                         y.Sifre = okuyucu.GetString(5);
-                        y.SonGirisTarihi = okuyucu.GetDateTime(6);
+                        if(!okuyucu.IsDBNull(6))
+                        {
+                            y.SonGirisTarihi = okuyucu.GetDateTime(6);
+                        }
                         y.Durum = okuyucu.GetBoolean(7);
                         y.DurumStr = y.Durum ? "Aktif" : "Pasif";
                         y.Silinmis = okuyucu.GetBoolean(8);
@@ -209,6 +212,9 @@ namespace VeriErisimKatmani
         }
 
         //Yonetici Kontrol
+        //0 dönüyorsa = kullanıcı adı adı ve mail adresi müsait
+        //1 dönüyorsa = Kullanıcı adı daha önceden alınmış
+        //2 dönüyorsa = mail adresi daha önceden alınmış
         public byte YoneticiKontrol(string KullaniciAdi, string Mail)
         {
             byte sonuc = 0;
@@ -220,18 +226,45 @@ namespace VeriErisimKatmani
                 baglanti.Open();
                 int ka_sayi = Convert.ToInt32(komut.ExecuteScalar());
                 if (ka_sayi > 0) { sonuc = 1; }
-                komut.CommandText = "SELECT COUNT(*) FROM Yoneticiler WHERE Mail = @m";
-                komut.Parameters.Clear();
-                komut.Parameters.AddWithValue("@m", Mail);
-                int m_sayi = Convert.ToInt32(komut.ExecuteScalar());
-                if (m_sayi > 0) { sonuc = 2; }
-                
+                else
+                {
+                    komut.CommandText = "SELECT COUNT(*) FROM Yoneticiler WHERE Mail = @m";
+                    komut.Parameters.Clear();
+                    komut.Parameters.AddWithValue("@m", Mail);
+                    int m_sayi = Convert.ToInt32(komut.ExecuteScalar());
+                    if (m_sayi > 0) { sonuc = 2; }
+                }
+
             }
-            finally{baglanti.Close();}
+            finally { baglanti.Close(); }
             return sonuc;
         }
 
         //Yönetici Ekle
+        public bool YoneticiEkle(Yonetici y)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Yoneticiler(Isim, Soyisim, KullaniciAdi, Mail, Sifre, SonGirisTarihi, Durum, Silinmis) VALUES(@isim,@soyisim, @kullaniciAdi, @mail, @sifre,  @durum, @silinmis)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@isim", y.Isim);
+                komut.Parameters.AddWithValue("@soyisim", y.Soyisim);
+                komut.Parameters.AddWithValue("@kullaniciAdi", y.KullaniciAdi);
+                komut.Parameters.AddWithValue("@mail", y.Mail);
+                komut.Parameters.AddWithValue("@sifre", y.Sifre);
+                komut.Parameters.AddWithValue("@durum", y.Durum);
+                komut.Parameters.AddWithValue("@silinmis", y.Silinmis);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            { baglanti.Close(); }
+        }
 
         //Yönetici Listele
 

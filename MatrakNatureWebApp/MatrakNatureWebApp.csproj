@@ -69,6 +69,9 @@
   <ItemGroup>
     <Content Include="Web.config" />
     <Content Include="YonetimPaneli\css\YoneticiGiris.css" />
+    <Content Include="YonetimPaneli\Resimler\yoneticiGirisBackground.jpg" />
+    <Content Include="YonetimPaneli\Resimler\yoneticiGirisBackground2.jpg" />
+    <Content Include="YonetimPaneli\Resimler\yoneticiGirisBackground2.png" />
     <Content Include="YonetimPaneli\YoneticiGiris.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -90,7 +93,12 @@
       <DependentUpon>Web.config</DependentUpon>
     </None>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\VeriErisimKatmani\VeriErisimKatmani.csproj">
+      <Project>{f8d5370c-7935-466c-b5c7-55a9584031d4}</Project>
+      <Name>VeriErisimKatmani</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
