@@ -28,7 +28,7 @@ namespace MatrakNatureWebApp.YonetimPaneli
                     {
                         if (yon.Durum)
                         {
-                            Response.Redirect("Default.aspx");
+                            Response.Redirect("Anasayfa.aspx");
                         }
                         else
                         {
@@ -47,7 +47,7 @@ namespace MatrakNatureWebApp.YonetimPaneli
             }
             else
             {
-                lbl_mesaj.Text = "*    Kullanıcı Adı girilmesi zorunludur";
+                lbl_mesaj.Text = "*    Mail adresi girilmesi zorunludur";
             }
         }
     }

@@ -1,0 +1,53 @@
+﻿*, h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Calibri;
+}
+
+.solTaraf {
+    width: 250px;
+    background-color: #055c5a;
+    height: 100vh;
+    float: left;
+    color: white;
+}
+
+    .solTaraf .baslik {
+        background-color: #024b4a;
+        padding: 20px 10px 10px 10px;
+        height: 40px;
+    }
+
+    .solTaraf .menu {
+        padding-top:10px;
+    }
+
+.menu a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 15px;
+}
+    .menu a:hover {
+        background-color: #024b4a;
+    }
+.menu label {
+    display: block;
+    color: white;
+    padding: 10px 5px;
+    background-color: #024b4a;
+}
+.sagTaraf {
+    width: 100%;
+    margin-left: 250px;
+    height: 100vh;
+}
+
+    .sagTaraf .ustBar {
+        background-color: #e5e5e5;
+        padding: 20px 10px 10px 10px;
+        height: 40px;
+    }
