@@ -1,0 +1,51 @@
+﻿.formTasiyici
+{
+    width:80%;
+}
+.formBaslik {
+    padding: 10px;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    border: 1px solid Silver;
+}
+.formIcerik {
+    padding: 10px;
+    border:1px solid Silver;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+.satir
+{
+    margin:7px 0;
+}
+
+.formMetinKutu {
+    height: 30px;
+    border: 1px solid #024b4a;
+    border-radius: 5px;
+    width: 100%;
+}
+.formButon {
+    background-color: #024b4a;
+    color: white;
+    padding: 7px 40px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.basariliPanel {
+    background-color: #bbf2b2;
+    color: #086b25;
+    border: 1px solid #086b25;
+    border-radius: 5px;
+    margin:10px 0;
+    padding:15px;
+}
+.basarisizPanel {
+    background-color: #febebe;
+    color: #6c0505;
+    border: 1px solid #6c0505;
+    border-radius: 5px;
+    margin: 10px 0;
+    padding: 15px;
+}
+
