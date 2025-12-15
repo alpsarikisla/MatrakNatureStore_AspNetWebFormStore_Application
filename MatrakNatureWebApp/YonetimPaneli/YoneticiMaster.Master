@@ -19,7 +19,8 @@
             <div class="menu">
                 <a href="Anasayfa.aspx">> Ayasayfa</a>
                 <label>Kategori İşlemleri</label>
-                <a href="Anasayfa.aspx">> Tüm Kategoriler</a>
+                <a href="KategoriListele.aspx">> Kullanılan Kategoriler</a>
+                 <a href="TumKategoriler.aspx">> Tüm Kategoriler</a>
                 <a href="KategoriEkle.aspx">> Kategori Ekle</a>
                 <label>Tedarikçi İşlemleri</label>
                 <a href="Anasayfa.aspx">> Tüm Tedarikçiler</a>

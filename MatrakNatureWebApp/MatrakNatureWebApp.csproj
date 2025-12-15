@@ -72,10 +72,13 @@
     <Content Include="YonetimPaneli\css\FormTasarim.css" />
     <Content Include="YonetimPaneli\css\PanelCss.css" />
     <Content Include="YonetimPaneli\css\YoneticiGiris.css" />
+    <Content Include="YonetimPaneli\KategoriDuzenle.aspx" />
     <Content Include="YonetimPaneli\KategoriEkle.aspx" />
+    <Content Include="YonetimPaneli\KategoriListele.aspx" />
     <Content Include="YonetimPaneli\Resimler\yoneticiGirisBackground.jpg" />
     <Content Include="YonetimPaneli\Resimler\yoneticiGirisBackground2.jpg" />
     <Content Include="YonetimPaneli\Resimler\yoneticiGirisBackground2.png" />
+    <Content Include="YonetimPaneli\TumKategoriler.aspx" />
     <Content Include="YonetimPaneli\YoneticiGiris.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -87,12 +90,33 @@
     <Compile Include="YonetimPaneli\Anasayfa.aspx.designer.cs">
       <DependentUpon>Anasayfa.aspx</DependentUpon>
     </Compile>
+    <Compile Include="YonetimPaneli\KategoriDuzenle.aspx.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YonetimPaneli\KategoriDuzenle.aspx.designer.cs">
+      <DependentUpon>KategoriDuzenle.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YonetimPaneli\KategoriEkle.aspx.cs">
       <DependentUpon>KategoriEkle.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="YonetimPaneli\KategoriEkle.aspx.designer.cs">
       <DependentUpon>KategoriEkle.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimPaneli\KategoriListele.aspx.cs">
+      <DependentUpon>KategoriListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YonetimPaneli\KategoriListele.aspx.designer.cs">
+      <DependentUpon>KategoriListele.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimPaneli\TumKategoriler.aspx.cs">
+      <DependentUpon>TumKategoriler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YonetimPaneli\TumKategoriler.aspx.designer.cs">
+      <DependentUpon>TumKategoriler.aspx</DependentUpon>
     </Compile>
     <Compile Include="YonetimPaneli\YoneticiGiris.aspx.cs">
       <DependentUpon>YoneticiGiris.aspx</DependentUpon>

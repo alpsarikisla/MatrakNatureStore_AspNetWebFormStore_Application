@@ -38,7 +38,9 @@ namespace VeriErisimKatmani
                         ID = okuyucu.GetInt32(0),
                         Isim = okuyucu.GetString(1),
                         YayinDurum = okuyucu.GetBoolean(2),
-                        Silinmis = okuyucu.GetBoolean(3)
+                        YayinDurumStr = okuyucu.GetBoolean(2) ? "Yayında" : "Yayında Değil",
+                        Silinmis = okuyucu.GetBoolean(3),
+                        SilinmisStr = okuyucu.GetBoolean(3) ? "Silinmis" : ""
                     };
                     kategoriler.Add(kategori);
                 }
@@ -70,7 +72,9 @@ namespace VeriErisimKatmani
                         ID = okuyucu.GetInt32(0),
                         Isim = okuyucu.GetString(1),
                         YayinDurum = okuyucu.GetBoolean(2),
-                        Silinmis = okuyucu.GetBoolean(3)
+                        YayinDurumStr = okuyucu.GetBoolean(2) ? "Yayında" : "Yayında Değil",
+                        Silinmis = okuyucu.GetBoolean(3),
+                         SilinmisStr = okuyucu.GetBoolean(3) ? "Silinmis" : ""
                     };
                     kategoriler.Add(kategori);
                 }

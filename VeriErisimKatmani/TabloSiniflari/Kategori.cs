@@ -11,6 +11,8 @@ namespace VeriErisimKatmani.TabloSiniflari
         public int ID { get; set; }
         public string Isim { get; set; }
         public bool YayinDurum { get; set; }
+        public string YayinDurumStr { get; set; }
         public bool Silinmis { get; set; }
+        public string SilinmisStr { get; set; }
     }
 }
