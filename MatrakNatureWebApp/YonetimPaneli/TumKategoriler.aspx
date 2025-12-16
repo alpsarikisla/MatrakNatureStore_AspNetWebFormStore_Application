@@ -27,7 +27,7 @@
                         <td><%# Eval("YayinDurumStr") %></td>
                         <td><%# Eval("SilinmisStr") %></td>
                         <td>
-                            <a href="KategoriDuzenle.aspx" Class="tabloButonDuzenle">Düzenle</a>
+                            <a href='KategoriDuzenle.aspx?kid=<%# Eval("ID") %>' Class="tabloButonDuzenle">Düzenle</a>
                             <asp:LinkButton ID="lbtn_sil" runat="server" CssClass="tabloButonSil" CommandArgument='<%# Eval("ID") %>' CommandName="sil">Sil</asp:LinkButton>
                         </td>
                     </tr>
