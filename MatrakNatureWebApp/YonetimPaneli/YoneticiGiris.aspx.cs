@@ -23,6 +23,7 @@ namespace MatrakNatureWebApp.YonetimPaneli
             {
                 if (!string.IsNullOrEmpty(tb_sifre.Text))
                 {
+                    
                     Yonetici yon = imm.YoneticiGiris(tb_mail.Text, tb_sifre.Text);
                     if (yon != null) 
                     {

@@ -164,6 +164,35 @@ namespace VeriErisimKatmani
 
         //Diğer İşlemler
 
+        //ID ye göre kategori getir
+        public Kategori KategoriGetir(int id)
+        {
+            try
+            {
+                komut.CommandText = "SELECT ID, Isim, YayinDurum, Silinmis FROM Kategoriler WHERE ID = @id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                Kategori kat = new Kategori();
+                while (okuyucu.Read()) 
+                {
+                    kat.ID = okuyucu.GetInt32(0);
+                    kat.Isim = okuyucu.GetString(1);
+                    kat.YayinDurum = okuyucu.GetBoolean(2);
+                    kat.Silinmis = okuyucu.GetBoolean(3);
+                }
+                return kat;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            {
+                baglanti.Close(); 
+            }
+        }
 
         #endregion
 
@@ -277,6 +306,61 @@ namespace VeriErisimKatmani
         //Yönetici Güncelle
 
         //Yönetici Sil
+
+        #endregion
+
+        #region Il - İlçe Metotları
+
+        public List<Sehir> SehirleriListele()
+        {
+            List<Sehir> sehirler = new List<Sehir>();
+            try
+            {
+                komut.CommandText = "SELECT ID, Isim FROM Iller";
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    Sehir sehir = new Sehir();
+                    sehir.ID = okuyucu.GetInt32(0);
+                    sehir.Isim = okuyucu.GetString(1);
+                    sehirler.Add(sehir);
+                }
+                return sehirler;
+            }
+            catch
+            {
+                return null;
+            }
+            finally { baglanti.Close(); }
+        }
+
+        public List<Ilce> SehireGoreIlceler(int sehirID)
+        {
+            List<Ilce> ilceler = new List<Ilce>();
+            try
+            {
+                komut.CommandText = "SELECT ID,Isim,IlID FROM Ilceler WHERE IlID=@id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", sehirID);
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    Ilce i = new Ilce();
+                    i.ID = okuyucu.GetInt32(0);
+                    i.Isim = okuyucu.GetString(1);
+                    i.Sehir_ID = okuyucu.GetInt32(2);
+                    ilceler.Add(i);
+                }
+                return ilceler;
+            }
+            catch
+            {
+                return null;
+            }
+            finally { baglanti.Close(); }
+        }
 
         #endregion
     }

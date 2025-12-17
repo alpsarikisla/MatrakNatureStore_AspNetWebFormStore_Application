@@ -26,7 +26,7 @@
                         <td><%# Eval("Isim") %></td>
                         <td><%# Eval("YayinDurumStr") %></td>
                         <td>
-                            <asp:LinkButton ID="lbtn_duzenle" runat="server" CssClass="tabloButonDuzenle">Düzenle</asp:LinkButton>
+                             <a href='KategoriDuzenle.aspx?kid=<%# Eval("ID") %>' Class="tabloButonDuzenle">Düzenle</a>
                             <asp:LinkButton ID="lbtn_sil" runat="server" CssClass="tabloButonSil">Sil</asp:LinkButton>
                         </td>
                     </tr>

@@ -24,7 +24,8 @@
     height: 30px;
     border: 1px solid #024b4a;
     border-radius: 5px;
-    width: 100%;
+    width: 98%;
+    padding:3px 10px;
 }
 
 .formButon {
