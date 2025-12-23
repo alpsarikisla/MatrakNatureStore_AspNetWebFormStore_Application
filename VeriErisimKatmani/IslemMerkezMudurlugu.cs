@@ -363,5 +363,38 @@ namespace VeriErisimKatmani
         }
 
         #endregion
+
+        #region Tedarikci Metotları
+
+        public bool TedarikciEkle(Tedarikci t)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Tedarikciler(IlID, IlceID, FirmaIsim, YetkiliIsim, YetkiliUnvan, TelefonNumarasi, Adres, Durum, Silinmis) VALUES(@ilID, @ilceID, @firmaIsim, @yetkiliIsim, @yetkiliUnvan, @telefonNumarasi, @adres, @durum, @silinmis)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@ilID", t.IlID);
+                komut.Parameters.AddWithValue("@ilceID", t.IlceID);
+                komut.Parameters.AddWithValue("@firmaIsim", t.FirmaIsim);
+                komut.Parameters.AddWithValue("@yetkiliIsim", t.YetkiliIsim);
+                komut.Parameters.AddWithValue("@yetkiliUnvan", t.YetkiliUnvan);
+                komut.Parameters.AddWithValue("@telefonNumarasi", t.TelefonNumarasi);
+                komut.Parameters.AddWithValue("@adres", t.Adres);
+                komut.Parameters.AddWithValue("@durum", t.Durum);
+                komut.Parameters.AddWithValue("@silinmis", t.Silinmis);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch
+            {
+                return false;
+            }
+            finally
+            {
+                baglanti.Close(); 
+            }
+        }
+
+        #endregion
     }
 }
