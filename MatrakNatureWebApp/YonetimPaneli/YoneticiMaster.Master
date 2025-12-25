@@ -14,24 +14,25 @@
     <form id="form1" runat="server">
         <div class="solTaraf">
             <div class="baslik">
-                <h3>Matrak Sağlıklı Ürünler</h3>
+                <h3>Matrak Doğal Ürünler Bazarı</h3>
             </div>
             <div class="menu">
                 <a href="Anasayfa.aspx">> Ayasayfa</a>
                 <label>Kategori İşlemleri</label>
-                <a href="KategoriListele.aspx">> Kullanılan Kategoriler</a>
-                <%-- <a href="TumKategoriler.aspx">> Tüm Kategoriler</a>--%>
+                <a href="KategoriListele.aspx">> Kategoriler</a>
                 <a href="KategoriEkle.aspx">> Kategori Ekle</a>
                 <label>Tedarikçi İşlemleri</label>
-                <a href="Anasayfa.aspx">> Tüm Tedarikçiler</a>
-                <a href="Anasayfa.aspx">> Kategori Ekle</a>
+                <a href="TedarikciListele.aspx">> Tedarikçiler</a>
+                <a href="TedarikciEkle.aspx">> Tedarikçi Ekle</a>
+                <label>Ürün İşlemleri</label>
+                <a href="#">> Ürünler</a>
+                <a href="#">> Ürün Ekle</a>
             </div>
         </div>
         <div class="sagTaraf">
             <div class="ustBar"></div>
             <div class="icerik">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-
                 </asp:ContentPlaceHolder>
             </div>
         </div>

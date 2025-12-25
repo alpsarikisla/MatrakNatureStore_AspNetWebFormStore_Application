@@ -6,6 +6,7 @@
     <div class="formTasiyici">
         <div class="formBaslik">
             <h3>Kategori Düzenle</h3>
+              <div style="clear:right"></div>
         </div>
         <div class="formIcerik">
             <asp:Panel ID="pnl_basarili" runat="server" CssClass="basariliPanel" Visible="false">

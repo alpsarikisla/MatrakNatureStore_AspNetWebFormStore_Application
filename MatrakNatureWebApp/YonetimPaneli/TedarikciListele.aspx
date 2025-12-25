@@ -1,23 +1,25 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/YonetimPaneli/YoneticiMaster.Master" AutoEventWireup="true" CodeBehind="TumKategoriler.aspx.cs" Inherits="MatrakNatureWebApp.YonetimPaneli.TumKategoriler" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/YonetimPaneli/YoneticiMaster.Master" AutoEventWireup="true" CodeBehind="TedarikciListele.aspx.cs" Inherits="MatrakNatureWebApp.YonetimPaneli.TedarikciListele" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <div class="formTasiyici">
         <div class="formBaslik">
-            <h3>Tüm Kategori Listesi</h3>
-            <a href="KategoriListele.aspx">Kategoriler </a>
+            <h3>Tedarikci Listesi</h3>
+            <a href="TumTedarikciler.aspx">Tüm Tedarikçiler </a>
             <div style="clear: right"></div>
         </div>
         <div class="formIcerik">
-            <asp:ListView ID="lv_kategoriler" runat="server" OnItemCommand="lv_kategoriler_ItemCommand">
+            <asp:ListView ID="lv_tedarikciler" runat="server" OnItemCommand="lv_tedarikciler_ItemCommand">
                 <LayoutTemplate>
                     <table class="tablo" cellspacing="0" cellpadding="0">
                         <tr>
                             <th>ID</th>
                             <th>Isim</th>
+                            <th>Yetkili</th>
+                            <th>Şehir</th>
+                            <th>Telefon</th>
                             <th>Durum</th>
-                            <th>Silinme Durum</th>
                             <th>Seçenekler</th>
                         </tr>
                         <asp:PlaceHolder ID="ItemPlaceHolder" runat="server"></asp:PlaceHolder>
@@ -26,11 +28,13 @@
                 <ItemTemplate>
                     <tr>
                         <td><%# Eval("ID") %></td>
-                        <td><%# Eval("Isim") %></td>
-                        <td><%# Eval("YayinDurumStr") %></td>
-                        <td><%# Eval("SilinmisStr") %></td>
+                        <td><%# Eval("FirmaIsim") %></td>
+                        <td><%# Eval("YetkiliIsim") %></td>
+                        <td><%# Eval("Il") %></td>
+                        <td><%# Eval("TelefonNumarasi") %></td>
+                        <td><%# Eval("DurumStr") %></td>
                         <td>
-                            <a href='KategoriDuzenle.aspx?kid=<%# Eval("ID") %>' class="tabloButonDuzenle">Düzenle</a>
+                            <a href='Tedarikci.aspx?tid=<%# Eval("ID") %>' class="tabloButonDuzenle">Düzenle</a>
                             <asp:LinkButton ID="lbtn_sil" runat="server" CssClass="tabloButonSil" CommandArgument='<%# Eval("ID") %>' CommandName="sil">Sil</asp:LinkButton>
                         </td>
                     </tr>
@@ -39,4 +43,3 @@
         </div>
     </div>
 </asp:Content>
-

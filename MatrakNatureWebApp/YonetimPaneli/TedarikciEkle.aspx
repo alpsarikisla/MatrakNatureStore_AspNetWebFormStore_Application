@@ -6,10 +6,11 @@
     <div class="formTasiyici">
         <div class="formBaslik">
             <h3>Kategori Ekle</h3>
+              <div style="clear:right"></div>
         </div>
         <div class="formIcerik">
             <asp:Panel ID="pnl_basarili" runat="server" CssClass="basariliPanel" Visible="false">
-                <label>Kategori Ekleme Başarılı</label>
+                <label>Tedarikçi Ekleme Başarılı</label>
             </asp:Panel>
             <asp:Panel ID="pnl_basarisiz" runat="server" CssClass="basarisizPanel" Visible="false">
                 <asp:Label ID="lbl_basarisizMesaj" runat="server"></asp:Label>
@@ -34,7 +35,7 @@
             <div class="sag">
                 <div class="satir">
                     <label style="line-height: 40px">Telefon Numarası</label><br />
-                    <asp:TextBox ID="tb_telefon" runat="server" CssClass="formMetinKutu"></asp:TextBox>
+                    <asp:TextBox ID="tb_telefon" runat="server" CssClass="formMetinKutu" placeholder="530XXXXXXX"></asp:TextBox>
                 </div>
                 <div class="satir">
                     <label style="line-height: 40px">Şehir</label><br />

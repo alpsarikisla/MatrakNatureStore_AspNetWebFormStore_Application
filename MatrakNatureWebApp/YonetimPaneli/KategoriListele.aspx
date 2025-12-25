@@ -6,6 +6,8 @@
     <div class="formTasiyici">
         <div class="formBaslik">
             <h3>Kategori Listesi</h3>
+            <a href="TumKategoriler.aspx"> Tüm Kategoriler </a>
+            <div style="clear:right"></div>
         </div>
         <div class="formIcerik">
             <asp:ListView ID="lv_kategoriler" runat="server">

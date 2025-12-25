@@ -79,7 +79,9 @@
     <Content Include="YonetimPaneli\Resimler\yoneticiGirisBackground2.jpg" />
     <Content Include="YonetimPaneli\Resimler\yoneticiGirisBackground2.png" />
     <Content Include="YonetimPaneli\TedarikciEkle.aspx" />
+    <Content Include="YonetimPaneli\TedarikciListele.aspx" />
     <Content Include="YonetimPaneli\TumKategoriler.aspx" />
+    <Content Include="YonetimPaneli\TumTedarikciler.aspx" />
     <Content Include="YonetimPaneli\YoneticiGiris.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -119,12 +121,26 @@
     <Compile Include="YonetimPaneli\TedarikciEkle.aspx.designer.cs">
       <DependentUpon>TedarikciEkle.aspx</DependentUpon>
     </Compile>
+    <Compile Include="YonetimPaneli\TedarikciListele.aspx.cs">
+      <DependentUpon>TedarikciListele.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YonetimPaneli\TedarikciListele.aspx.designer.cs">
+      <DependentUpon>TedarikciListele.aspx</DependentUpon>
+    </Compile>
     <Compile Include="YonetimPaneli\TumKategoriler.aspx.cs">
       <DependentUpon>TumKategoriler.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="YonetimPaneli\TumKategoriler.aspx.designer.cs">
       <DependentUpon>TumKategoriler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimPaneli\TumTedarikciler.aspx.cs">
+      <DependentUpon>TumTedarikciler.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YonetimPaneli\TumTedarikciler.aspx.designer.cs">
+      <DependentUpon>TumTedarikciler.aspx</DependentUpon>
     </Compile>
     <Compile Include="YonetimPaneli\YoneticiGiris.aspx.cs">
       <DependentUpon>YoneticiGiris.aspx</DependentUpon>

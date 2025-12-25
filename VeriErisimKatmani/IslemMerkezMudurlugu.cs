@@ -395,6 +395,120 @@ namespace VeriErisimKatmani
             }
         }
 
+        public List<Tedarikci> TedarikciListele()
+        {
+            List<Tedarikci> tedarikciler = new List<Tedarikci>();
+
+            try
+            {
+                komut.CommandText = "SELECT T.ID, T.IlID, S.Isim, T.IlceID, I.Isim, T.FirmaIsim, T.YetkiliIsim, T.YetkiliUnvan, T.TelefonNumarasi, T.Adres, T.Durum, T.Silinmis FROM Tedarikciler AS T JOIN Iller AS S ON T.IlID = S.ID JOIN Ilceler AS I ON T.IlceID = I.ID";
+                komut.Parameters.Clear();
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read()) 
+                {
+                    Tedarikci t = new Tedarikci();
+                    t.ID = okuyucu.GetInt32(0);
+                    t.IlID = okuyucu.GetInt32(1);
+                    t.Il = okuyucu.GetString(2);
+                    t.IlceID = okuyucu.GetInt32(3);
+                    t.Ilce = okuyucu.GetString(4);
+                    t.FirmaIsim = okuyucu.GetString(5);
+                    t.YetkiliIsim = okuyucu.GetString(6);
+                    t.YetkiliUnvan = okuyucu.GetString(7);
+                    t.TelefonNumarasi = okuyucu.GetString(8);
+                    t.Adres = okuyucu.GetString(9);
+                    t.Durum = okuyucu.GetBoolean(10);
+                    t.DurumStr = okuyucu.GetBoolean(10) ? "Aktif" : "Pasif";
+                    t.Silinmis = okuyucu.GetBoolean(11);
+                    tedarikciler.Add(t);
+                }
+                return tedarikciler;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            { baglanti.Close(); }
+        }
+
+        public List<Tedarikci> TedarikciListele(bool silinmeDurum)
+        {
+            List<Tedarikci> tedarikciler = new List<Tedarikci>();
+
+            try
+            {
+                komut.CommandText = "SELECT T.ID, T.IlID, S.Isim, T.IlceID, I.Isim, T.FirmaIsim, T.YetkiliIsim, T.YetkiliUnvan, T.TelefonNumarasi, T.Adres, T.Durum, T.Silinmis FROM Tedarikciler AS T JOIN Iller AS S ON T.IlID = S.ID JOIN Ilceler AS I ON T.IlceID = I.ID WHERE T.Silinmis = @silinmeDurum";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@silinmeDurum", silinmeDurum);
+
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                while (okuyucu.Read())
+                {
+                    Tedarikci t = new Tedarikci();
+                    t.ID = okuyucu.GetInt32(0);
+                    t.IlID = okuyucu.GetInt32(1);
+                    t.Il = okuyucu.GetString(2);
+                    t.IlceID = okuyucu.GetInt32(3);
+                    t.Ilce = okuyucu.GetString(4);
+                    t.FirmaIsim = okuyucu.GetString(5);
+                    t.YetkiliIsim = okuyucu.GetString(6);
+                    t.YetkiliUnvan = okuyucu.GetString(7);
+                    t.TelefonNumarasi = okuyucu.GetString(8);
+                    t.Adres = okuyucu.GetString(9);
+                    t.Durum = okuyucu.GetBoolean(10);
+                    t.DurumStr = okuyucu.GetBoolean(10) ? "Aktif" : "Pasif";
+                    t.Silinmis = okuyucu.GetBoolean(11);
+                    tedarikciler.Add(t);
+                }
+                return tedarikciler;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            { baglanti.Close(); }
+        }
+        public Tedarikci TedarikciGetir(int id)
+        {
+            try
+            {
+                komut.CommandText = "SELECT T.ID, T.IlID, S.Isim, T.IlceID, I.Isim, T.FirmaIsim, T.YetkiliIsim, T.YetkiliUnvan, T.TelefonNumarasi, T.Adres, T.Durum, T.Silinmis FROM Tedarikciler AS T JOIN Iller AS S ON T.IlID = S.ID JOIN Ilceler AS I ON T.IlceID = I.ID WHERE T.ID = @id";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@id", id);
+
+                baglanti.Open();
+                SqlDataReader okuyucu = komut.ExecuteReader();
+                Tedarikci t = new Tedarikci();
+                while (okuyucu.Read())
+                {
+                    t.ID = okuyucu.GetInt32(0);
+                    t.IlID = okuyucu.GetInt32(1);
+                    t.Il = okuyucu.GetString(2);
+                    t.IlceID = okuyucu.GetInt32(3);
+                    t.Ilce = okuyucu.GetString(4);
+                    t.FirmaIsim = okuyucu.GetString(5);
+                    t.YetkiliIsim = okuyucu.GetString(6);
+                    t.YetkiliUnvan = okuyucu.GetString(7);
+                    t.TelefonNumarasi = okuyucu.GetString(8);
+                    t.Adres = okuyucu.GetString(9);
+                    t.Durum = okuyucu.GetBoolean(10);
+                    t.DurumStr = okuyucu.GetBoolean(10) ? "Aktif" : "Pasif";
+                    t.Silinmis = okuyucu.GetBoolean(11);
+                }
+                return t;
+            }
+            catch
+            {
+                return null;
+            }
+            finally
+            { baglanti.Close(); }
+        }
+
         #endregion
     }
 }

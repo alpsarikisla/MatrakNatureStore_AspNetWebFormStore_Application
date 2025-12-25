@@ -5,6 +5,7 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using VeriErisimKatmani;
+using VeriErisimKatmani.TabloSiniflari;
 
 namespace MatrakNatureWebApp.YonetimPaneli
 {
@@ -26,12 +27,6 @@ namespace MatrakNatureWebApp.YonetimPaneli
                 ddl_ilce.DataBind();
             }
         }
-
-        protected void lbtn_ekle_Click(object sender, EventArgs e)
-        {
-
-        }
-
         protected void ddl_sehir_SelectedIndexChanged(object sender, EventArgs e)
         {
             int sehirId = Convert.ToInt32(ddl_sehir.SelectedValue);
@@ -40,5 +35,40 @@ namespace MatrakNatureWebApp.YonetimPaneli
             ddl_ilce.DataTextField = "Isim";
             ddl_ilce.DataBind();
         }
+        protected void lbtn_ekle_Click(object sender, EventArgs e)
+        {
+            if(!string.IsNullOrEmpty(tb_isim.Text))
+            {
+                Tedarikci tt = new Tedarikci();
+                tt.FirmaIsim = tb_isim.Text;
+                tt.YetkiliIsim = tb_yetkili.Text;
+                tt.YetkiliUnvan = tb_unvan.Text;
+                tt.Durum = cb_aktif.Checked;
+                tt.Silinmis = false;
+                tt.IlID = Convert.ToInt32(ddl_sehir.SelectedItem.Value);
+                tt.IlceID = Convert.ToInt32(ddl_ilce.SelectedItem.Value);
+                tt.Adres = tb_adres.Text;
+                tt.TelefonNumarasi = tb_telefon.Text;
+                if(imm.TedarikciEkle(tt))
+                {
+                    pnl_basarisiz.Visible = false;
+                    pnl_basarili.Visible = true;
+                }
+                else
+                {
+                    pnl_basarisiz.Visible = true;
+                    pnl_basarili.Visible = false;
+                    lbl_basarisizMesaj.Text = "Tedarikçi ekleme işlemi başarısız";
+                }
+            }
+            else
+            {
+                pnl_basarisiz.Visible = true;
+                pnl_basarili.Visible = false;
+                lbl_basarisizMesaj.Text = "Firma adı boş bırakılamaz";
+            }
+        }
+
+        
     }
 }

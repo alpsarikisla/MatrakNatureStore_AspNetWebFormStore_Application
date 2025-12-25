@@ -8,13 +8,18 @@
     border-top-right-radius: 7px;
     border: 1px solid Silver;
 }
-
-.formIcerik {
-    padding: 10px;
-    border: 1px solid Silver;
-    border-bottom-left-radius: 7px;
-    border-bottom-right-radius: 7px;
-}
+    .formBaslik h3 {
+        float: left;
+    }
+    .formBaslik a {
+        float:right;
+    }
+    .formIcerik {
+        padding: 10px;
+        border: 1px solid Silver;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+    }
 
 .satir {
     margin: 7px 0;

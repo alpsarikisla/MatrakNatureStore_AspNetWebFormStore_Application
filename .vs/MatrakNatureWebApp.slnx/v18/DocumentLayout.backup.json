@@ -3,16 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\matraknaturewebapp\\yonetimpaneli\\tedarikciekle.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|solutionrelative:matraknaturewebapp\\yonetimpaneli\\tedarikciekle.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\matraknaturewebapp\\yonetimpaneli\\tumtedarikciler.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|solutionrelative:matraknaturewebapp\\yonetimpaneli\\tumtedarikciler.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\matraknaturewebapp\\yonetimpaneli\\tedarikciekle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|solutionrelative:matraknaturewebapp\\yonetimpaneli\\tedarikciekle.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{F8D5370C-7935-466C-B5C7-55A9584031D4}|VeriErisimKatmani\\VeriErisimKatmani.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\verierisimkatmani\\islemmerkezmudurlugu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F8D5370C-7935-466C-B5C7-55A9584031D4}|VeriErisimKatmani\\VeriErisimKatmani.csproj|solutionrelative:verierisimkatmani\\islemmerkezmudurlugu.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\matraknaturewebapp\\yonetimpaneli\\css\\formtasarim.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|solutionrelative:matraknaturewebapp\\yonetimpaneli\\css\\formtasarim.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\matraknaturewebapp\\yonetimpaneli\\tedarikcilistele.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|solutionrelative:matraknaturewebapp\\yonetimpaneli\\tedarikcilistele.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\matraknaturewebapp\\yonetimpaneli\\kategorilistele.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|solutionrelative:matraknaturewebapp\\yonetimpaneli\\kategorilistele.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\matraknaturewebapp\\yonetimpaneli\\tedarikcilistele.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|solutionrelative:matraknaturewebapp\\yonetimpaneli\\tedarikcilistele.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\matraknaturewebapp\\yonetimpaneli\\tumtedarikciler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|solutionrelative:matraknaturewebapp\\yonetimpaneli\\tumtedarikciler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|c:\\users\\alp\\documents\\github\\matraknaturestore_aspnetwebformstore_application\\matraknaturewebapp\\yonetimpaneli\\tumkategoriler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{AC00C315-49B2-46B9-903C-72EC9AA52F92}|MatrakNatureWebApp\\MatrakNatureWebApp.csproj|solutionrelative:matraknaturewebapp\\yonetimpaneli\\tumkategoriler.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -31,52 +47,98 @@
           ]
         },
         {
-          "DockedWidth": 49,
-          "SelectedChildIndex": 0,
-          "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "FormTasarim.css",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\css\\FormTasarim.css",
-              "RelativeDocumentMoniker": "MatrakNatureWebApp\\YonetimPaneli\\css\\FormTasarim.css",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\css\\FormTasarim.css",
-              "RelativeToolTip": "MatrakNatureWebApp\\YonetimPaneli\\css\\FormTasarim.css",
-              "ViewState": "AgIAAEIAAAAAAAAAAAAAAFcAAAADAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-12-17T06:15:58.265Z",
-              "EditorCaption": ""
-            }
-          ]
-        },
-        {
-          "DockedWidth": 99,
+          "DockedWidth": 128,
           "SelectedChildIndex": 0,
           "Children": [
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "TedarikciEkle.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TedarikciEkle.aspx.cs",
-              "RelativeDocumentMoniker": "MatrakNatureWebApp\\YonetimPaneli\\TedarikciEkle.aspx.cs",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TedarikciEkle.aspx.cs",
-              "RelativeToolTip": "MatrakNatureWebApp\\YonetimPaneli\\TedarikciEkle.aspx.cs",
-              "ViewState": "AgIAAB0AAAAAAAAAAAAgwCsAAAABAAAAAAAAAA==",
+              "Title": "TumTedarikciler.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TumTedarikciler.aspx.cs",
+              "RelativeDocumentMoniker": "MatrakNatureWebApp\\YonetimPaneli\\TumTedarikciler.aspx.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TumTedarikciler.aspx.cs",
+              "RelativeToolTip": "MatrakNatureWebApp\\YonetimPaneli\\TumTedarikciler.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-22T13:51:44.299Z",
+              "WhenOpened": "2025-12-25T08:55:17.835Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "TedarikciEkle.aspx",
-              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TedarikciEkle.aspx",
-              "RelativeDocumentMoniker": "MatrakNatureWebApp\\YonetimPaneli\\TedarikciEkle.aspx",
-              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TedarikciEkle.aspx",
-              "RelativeToolTip": "MatrakNatureWebApp\\YonetimPaneli\\TedarikciEkle.aspx",
+              "Title": "IslemMerkezMudurlugu.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\VeriErisimKatmani\\IslemMerkezMudurlugu.cs",
+              "RelativeDocumentMoniker": "VeriErisimKatmani\\IslemMerkezMudurlugu.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\VeriErisimKatmani\\IslemMerkezMudurlugu.cs",
+              "RelativeToolTip": "VeriErisimKatmani\\IslemMerkezMudurlugu.cs",
+              "ViewState": "AgIAAKsBAAAAAAAAAAAcwLsBAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T07:52:20.241Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "TedarikciListele.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TedarikciListele.aspx.cs",
+              "RelativeDocumentMoniker": "MatrakNatureWebApp\\YonetimPaneli\\TedarikciListele.aspx.cs",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TedarikciListele.aspx.cs",
+              "RelativeToolTip": "MatrakNatureWebApp\\YonetimPaneli\\TedarikciListele.aspx.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAlwA8AAABFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-25T08:35:44.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TumKategoriler.aspx",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TumKategoriler.aspx",
+              "RelativeDocumentMoniker": "MatrakNatureWebApp\\YonetimPaneli\\TumKategoriler.aspx",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TumKategoriler.aspx",
+              "RelativeToolTip": "MatrakNatureWebApp\\YonetimPaneli\\TumKategoriler.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2025-12-22T13:45:01.338Z",
+              "WhenOpened": "2025-12-25T08:48:45.29Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "KategoriListele.aspx",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\KategoriListele.aspx",
+              "RelativeDocumentMoniker": "MatrakNatureWebApp\\YonetimPaneli\\KategoriListele.aspx",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\KategoriListele.aspx",
+              "RelativeToolTip": "MatrakNatureWebApp\\YonetimPaneli\\KategoriListele.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-25T08:43:08.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TedarikciListele.aspx",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TedarikciListele.aspx",
+              "RelativeDocumentMoniker": "MatrakNatureWebApp\\YonetimPaneli\\TedarikciListele.aspx",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TedarikciListele.aspx",
+              "RelativeToolTip": "MatrakNatureWebApp\\YonetimPaneli\\TedarikciListele.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-25T07:51:56.139Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "TumTedarikciler.aspx",
+              "DocumentMoniker": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TumTedarikciler.aspx",
+              "RelativeDocumentMoniker": "MatrakNatureWebApp\\YonetimPaneli\\TumTedarikciler.aspx",
+              "ToolTip": "C:\\Users\\Alp\\Documents\\GitHub\\MatrakNatureStore_AspNetWebFormStore_Application\\MatrakNatureWebApp\\YonetimPaneli\\TumTedarikciler.aspx",
+              "RelativeToolTip": "MatrakNatureWebApp\\YonetimPaneli\\TumTedarikciler.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2025-12-25T07:52:14.646Z",
               "EditorCaption": ""
             }
           ]
