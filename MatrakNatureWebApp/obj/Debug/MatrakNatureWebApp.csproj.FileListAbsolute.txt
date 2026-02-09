@@ -51,11 +51,11 @@ C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\M
 C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\bin\roslyn\VBCSCompiler.exe
 C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\bin\roslyn\VBCSCompiler.exe.config
 C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\bin\VeriErisimKatmani.dll
+C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\bin\VeriErisimKatmani.pdb
 C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\obj\Debug\MatrakNatureWebApp.csproj.AssemblyReference.cache
 C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\obj\Debug\MatrakNatureWebApp.csproj.CoreCompileInputs.cache
 C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\obj\Debug\MatrakNa.9F2916D8.Up2Date
 C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\obj\Debug\MatrakNatureWebApp.dll
 C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\obj\Debug\MatrakNatureWebApp.pdb
-C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\bin\VeriErisimKatmani.dll
-C:\Users\Alp\Documents\GitHub\MatrakNatureStore_AspNetWebFormStore_Application\MatrakNatureWebApp\bin\VeriErisimKatmani.pdb

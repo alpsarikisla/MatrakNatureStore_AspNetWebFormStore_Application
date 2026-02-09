@@ -14,12 +14,13 @@
     .formBaslik a {
         float:right;
     }
-    .formIcerik {
-        padding: 10px;
-        border: 1px solid Silver;
-        border-bottom-left-radius: 7px;
-        border-bottom-right-radius: 7px;
-    }
+.formIcerik {
+    
+    padding: 10px;
+    border: 1px solid Silver;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
 
 .satir {
     margin: 7px 0;
@@ -90,12 +91,12 @@
     color: white;
     background-color: #6c0505;
 }
-.sol{
+.container {
+    display: flex;
+    gap: 30px;
+    flex-direction: row;
+}
+.kolon{
     width:48%;
-    float:left;
 }
-.sag {
-    margin-left:30px;
-    width: 48%;
-    float:left;
-}
+

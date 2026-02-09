@@ -82,6 +82,7 @@
     <Content Include="YonetimPaneli\TedarikciListele.aspx" />
     <Content Include="YonetimPaneli\TumKategoriler.aspx" />
     <Content Include="YonetimPaneli\TumTedarikciler.aspx" />
+    <Content Include="YonetimPaneli\UrunEkle.aspx" />
     <Content Include="YonetimPaneli\YoneticiGiris.aspx" />
   </ItemGroup>
   <ItemGroup>
@@ -141,6 +142,13 @@
     </Compile>
     <Compile Include="YonetimPaneli\TumTedarikciler.aspx.designer.cs">
       <DependentUpon>TumTedarikciler.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="YonetimPaneli\UrunEkle.aspx.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="YonetimPaneli\UrunEkle.aspx.designer.cs">
+      <DependentUpon>UrunEkle.aspx</DependentUpon>
     </Compile>
     <Compile Include="YonetimPaneli\YoneticiGiris.aspx.cs">
       <DependentUpon>YoneticiGiris.aspx</DependentUpon>

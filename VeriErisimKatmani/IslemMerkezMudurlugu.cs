@@ -196,7 +196,6 @@ namespace VeriErisimKatmani
 
         #endregion
 
-
         #region Yönetici Metotları
 
         //Yönetici Giriş
@@ -472,6 +471,7 @@ namespace VeriErisimKatmani
             finally
             { baglanti.Close(); }
         }
+
         public Tedarikci TedarikciGetir(int id)
         {
             try
@@ -508,6 +508,12 @@ namespace VeriErisimKatmani
             finally
             { baglanti.Close(); }
         }
+
+        #endregion
+
+        #region Ürün Metotları
+
+        
 
         #endregion
     }
