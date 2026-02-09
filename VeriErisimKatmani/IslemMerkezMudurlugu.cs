@@ -513,6 +513,29 @@ namespace VeriErisimKatmani
 
         #region Ürün Metotları
 
+        public bool UrunEkle(Urun model)
+        {
+            try
+            {
+                komut.CommandText = "INSERT INTO Urunler(KategoriID, TedarikciID, Isim, Aciklama, Stok, ListeFiyat, Durum, Silinmis, ResimYolu) VALUES(@kategoriID ,@tedarikciID, @isim, @aciklama, @stok, @listeFiyat, @durum, @silinmis, @resimYolu)";
+                komut.Parameters.Clear();
+                komut.Parameters.AddWithValue("@kategoriID", model.KategoriID);
+                komut.Parameters.AddWithValue("@tedarikciID", model.KategoriID);
+                komut.Parameters.AddWithValue("@isim", model.KategoriID);
+                komut.Parameters.AddWithValue("@aciklama", model.KategoriID);
+                komut.Parameters.AddWithValue("@stok", model.KategoriID);
+                komut.Parameters.AddWithValue("@listeFiyat", model.KategoriID);
+                komut.Parameters.AddWithValue("@durum", model.KategoriID);
+                komut.Parameters.AddWithValue("@silinmis", model.KategoriID);
+                komut.Parameters.AddWithValue("@resimYolu", model.UrunResim);
+                baglanti.Open();
+                komut.ExecuteNonQuery();
+                return true;
+            }
+            catch { return false; }
+            finally
+            { baglanti.Close(); }
+        }
         
 
         #endregion

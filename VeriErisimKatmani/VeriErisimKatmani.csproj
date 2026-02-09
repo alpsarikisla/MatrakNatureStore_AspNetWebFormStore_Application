@@ -48,6 +48,7 @@
     <Compile Include="TabloSiniflari\Kategori.cs" />
     <Compile Include="TabloSiniflari\Sehir.cs" />
     <Compile Include="TabloSiniflari\Tedarikci.cs" />
+    <Compile Include="TabloSiniflari\Urun.cs" />
     <Compile Include="TabloSiniflari\Yonetici.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

@@ -35,8 +35,12 @@
                         <asp:TextBox ID="tb_fiyat" runat="server" CssClass="formMetinKutu" placeholder="Fiyat Giriniz"></asp:TextBox>
                     </div>
                     <div class="satir">
-                        <label style="line-height: 40px">Stok</label><br />
+                        <label style="line-height: 40px">Stok:</label><br />
                         <asp:TextBox ID="tb_stok" runat="server" CssClass="formMetinKutu" placeholder="Stok Giriniz"></asp:TextBox>
+                    </div>
+                    <div class="satir">
+                        <label style="line-height:40px">Ürün Resmi:</label>
+                        <asp:FileUpload ID="fu_resim" runat="server" CssClass="formMetinKutu" />
                     </div>
                 </div>
                 <div class="kolon">
@@ -45,7 +49,7 @@
                         <asp:TextBox ID="tb_aciklama" runat="server" CssClass="formMetinKutu" TextMode="MultiLine" Height="300"></asp:TextBox>
                     </div>
                     <div class="satir" style="margin-top: 30px;">
-                        <asp:CheckBox ID="cb_aktif" runat="server" Text=" Aktif Tedarikçi"></asp:CheckBox>
+                        <asp:CheckBox ID="cb_aktif" runat="server" Text=" Aktif Ürün"></asp:CheckBox>
                     </div>
                 </div>
             </div>

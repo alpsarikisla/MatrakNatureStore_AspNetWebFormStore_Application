@@ -87,6 +87,15 @@ namespace MatrakNatureWebApp.YonetimPaneli
         protected global::System.Web.UI.WebControls.TextBox tb_stok;
 
         /// <summary>
+        /// fu_resim control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.FileUpload fu_resim;
+
+        /// <summary>
         /// tb_aciklama control.
         /// </summary>
         /// <remarks>
